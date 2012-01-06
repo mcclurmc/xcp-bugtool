@@ -1,0 +1,17 @@
+--- a/Makefile
++++ b/Makefile
+@@ -2,10 +2,14 @@
+ INSTALL_DATA = install    -m u=rw,go=r   -g root -p
+ INSTALL_DIR  = install -d -m u=rwx,go=rx  g root -p
+ 
++STAGING=$(DESTDIR)
++
+ all:
+ 	@
+ 
+ install:
++	mkdir -p $(STAGING)/usr/sbin
++	mkdir -p $(STAGING)/usr/lib/python2.7/dist-packages
+ 	$(INSTALL_PROG) xen-bugtool $(STAGING)/usr/sbin
+ 	$(INSTALL_DIR) $(STAGING)/usr/lib/python2.7
+ 	$(INSTALL_DATA) sexp.py $(STAGING)/usr/lib/python2.7
