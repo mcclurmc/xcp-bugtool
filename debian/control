@@ -1,0 +1,13 @@
+Source: xcp-bugtool
+Section: unknown
+Priority: extra
+Maintainer: Mike McClurg <mikemc@tardis.uk.xensource.com>
+Build-Depends: quilt (>= 0.46-7~), debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: xcp-bugtool
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

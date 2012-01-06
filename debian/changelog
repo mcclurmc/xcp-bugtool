@@ -1,0 +1,5 @@
+xcp-bugtool (0.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Mike McClurg <mikemc@tardis.uk.xensource.com>  Fri, 06 Jan 2012 15:56:55 +0000
